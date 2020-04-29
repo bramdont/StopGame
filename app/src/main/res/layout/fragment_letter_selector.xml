@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LetterSelectorFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:id="@+id/chooseLetterTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="56dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/choose_a_letter_title"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#FF0303"
+            android:textSize="70sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/letterChosen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="56dp"
+            android:ems="10"
+            android:hint="@string/choose_a_letter_hint"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:textAlignment="center"
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chooseLetterTitle" />
+
+        <TextView
+            android:id="@+id/playButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="56dp"
+            android:background="@color/play_button_background"
+            android:contentDescription="@string/choose_letter_description"
+            android:fontFamily="sans-serif"
+            android:inputType="text"
+            android:text="@string/play_button"
+            android:textAlignment="center"
+            android:textColor="@color/play_button_text"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/letterChosen" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

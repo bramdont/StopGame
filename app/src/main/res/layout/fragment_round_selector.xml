@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".RoundSelectorFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:id="@+id/chooseRoundTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="56dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/choose_rounds_label"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#FF0303"
+            android:textSize="70sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+
+            android:id="@+id/roundsSelector_radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:soundEffectsEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chooseRoundTitle">
+
+            <RadioButton
+                android:id="@+id/fiveRounds_radioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:clickable="true"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/five_rounds_text"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/tenRounds_radioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="false"
+                android:text="@string/ten_rounds_text"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/startGameButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="56dp"
+            android:background="@color/play_button_background"
+            android:fontFamily="sans-serif"
+            android:text="@string/start_game_button"
+            android:textAlignment="center"
+            android:textColor="@color/play_button_text"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/roundsSelector_radioGroup" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

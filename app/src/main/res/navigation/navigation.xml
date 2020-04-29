@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.stopgame.HomeFragment"
+        android:label="@string/home_fragment_label"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_roundSelectorFragment"
+            app:destination="@id/roundSelectorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rulesFragment"
+        android:name="com.example.stopgame.RulesFragment"
+        android:label="@string/game_rules_label"
+        tools:layout="@layout/fragment_rules" />
+    <fragment
+        android:id="@+id/roundSelectorFragment"
+        android:name="com.example.stopgame.RoundSelectorFragment"
+        android:label="@string/choose_rounds_label"
+        tools:layout="@layout/fragment_round_selector">
+        <action
+            android:id="@+id/action_roundSelectorFragment_to_letterSelectorFragment"
+            app:destination="@id/letterSelectorFragment"
+            app:popUpTo="@id/roundSelectorFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/letterSelectorFragment"
+        android:name="com.example.stopgame.LetterSelectorFragment"
+        android:label="@string/choose_a_letter_title"
+        tools:layout="@layout/fragment_letter_selector" >
+        <argument
+            android:name="rounds"
+            app:argType="integer"
+            android:defaultValue="5" />
+    </fragment>
+</navigation>

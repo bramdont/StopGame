@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Stop Game</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="stop_game_fragment">Stop Game</string>
+
+    <!-- Home Fragment -->
+    <string name="home_fragment_label">Stop Game</string>
+    <string name="play_game_button">Play Game</string>
+    <string name="stop_game_label">Stops Game Rules </string>
+
+    <!-- Drawer menu -->
+    <string name="home">Home</string>
+    <string name="rules">Rules</string>
+    <string name="about">About</string>
+
+    <!-- Games Rules Fragment-->
+    <string name="game_rules_image_description">Stops Game Rules </string>
+    <string name="game_rules_label">Stops Game Rules </string>
+
+    <!-- Round Selector Fragment -->
+    <string name="choose_rounds_label">Choose Rounds</string>
+    <string name="five_rounds_text">5 rounds</string>
+    <string name="ten_rounds_text">10 rounds</string>
+    <string name="start_game_button">Start Game</string>
+
+    <!-- Letter Selector Fragment -->
+    <string name="choose_a_letter_title">Choose a letter</string>
+    <string name="play_button">Play</string>
+    <string name="choose_a_letter_hint">Letter</string>
+    <string name="choose_letter_description">This editText will holds the letter chosen to play</string>
+
+</resources>
