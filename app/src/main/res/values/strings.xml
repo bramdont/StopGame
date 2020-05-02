@@ -30,4 +30,16 @@
     <string name="choose_a_letter_hint">Letter</string>
     <string name="choose_letter_description">This editText will holds the letter chosen to play</string>
 
+    <!-- Name Fragment -->
+    <string name="name_title">Write a name</string>
+    <string name="name_logo_description">This is the name logo.</string>
+    <string name="name_editText">Name</string>
+    <string name="next_button">Next</string>
+
+    <!-- Last name Fragment -->
+    <string name="last_name_title">Write a Last name</string>
+    <string name="last_name_logo_description">This is the Last name logo.</string>
+    <string name="last_name_editText">Last name</string>
+    <string name="_last_next_button">Next</string>
+
 </resources>

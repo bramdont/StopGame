@@ -9,6 +9,7 @@ import android.widget.RadioGroup
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.example.stopgame.databinding.FragmentRoundSelectorBinding
@@ -26,11 +27,10 @@ class RoundSelectorFragment : Fragment() {
         val binding: FragmentRoundSelectorBinding =
             DataBindingUtil.inflate(inflater, R.layout.fragment_round_selector, container, false)
         binding.startGameButton.setOnClickListener {
-           var rounds = getRoundsSelected(binding.roundsSelectorRadioGroup)
+            val rounds = getRoundsSelected(binding.roundsSelectorRadioGroup)
 
-            callChooseLetterFragment(rounds, it)
+            callChooseLetterFragment(it, rounds)
         }
-
         return binding.root
     }
 
@@ -43,9 +43,12 @@ class RoundSelectorFragment : Fragment() {
         }
     }
 
-    private fun callChooseLetterFragment(rounds: Int, view: View){
+    private fun callChooseLetterFragment(view: View, rounds: Int){
 
-        Navigation.findNavController(view).navigate(R.id.action_roundSelectorFragment_to_letterSelectorFragment)
+        view.findNavController().navigate(
+            RoundSelectorFragmentDirections
+                .actionRoundSelectorFragmentToLetterSelectorFragment(rounds))
     }
+
 
 }

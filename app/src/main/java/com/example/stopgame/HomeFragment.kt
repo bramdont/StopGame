@@ -29,7 +29,7 @@ class HomeFragment : Fragment() {
     }
 
     private fun playGame (view: View){
-        Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_roundSelectorFragment)
+        Navigation.findNavController(view).navigate(HomeFragmentDirections.actionHomeFragmentToRoundSelectorFragment())
     }
 
 }
