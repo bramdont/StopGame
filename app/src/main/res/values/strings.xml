@@ -7,7 +7,7 @@
     <!-- Home Fragment -->
     <string name="home_fragment_label">Stop Game</string>
     <string name="play_game_button">Play Game</string>
-    <string name="stop_game_label">Stops Game Rules </string>
+    <string name="stop_game_label">Stops Game Rules</string>
 
     <!-- Drawer menu -->
     <string name="home">Home</string>
