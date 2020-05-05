@@ -40,6 +40,14 @@
     <string name="last_name_title">Write a Last name</string>
     <string name="last_name_logo_description">This is the Last name logo.</string>
     <string name="last_name_editText">Last name</string>
-    <string name="_last_next_button">Next</string>
+    <string name="last_name_next_button">Next</string>
+
+    <!-- Food fragment -->
+    <string name="food_title">Write a food</string>
+    <string name="food_logo_description">This is the food logo.</string>
+    <string name="food_editText">Food</string>
+    <string name="food_next_button">Next</string>
+
+
 
 </resources>

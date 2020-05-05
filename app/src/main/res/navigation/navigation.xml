@@ -68,5 +68,20 @@
         <argument
             android:name="letter"
             app:argType="string" />
+        <action
+            android:id="@+id/action_lastNameFragment_to_foodFragment"
+            app:destination="@id/foodFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/foodFragment"
+        android:name="com.example.stopgame.FoodFragment"
+        android:label="@string/food_title"
+        tools:layout="@layout/fragment_food">
+        <argument
+            android:name="round"
+            app:argType="integer" />
+        <argument
+            android:name="letter"
+            app:argType="string" />
     </fragment>
 </navigation>

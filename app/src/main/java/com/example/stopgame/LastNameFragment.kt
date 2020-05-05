@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
 import com.example.stopgame.databinding.FragmentLastNameBinding
 
 
@@ -26,7 +27,15 @@ class LastNameFragment : Fragment() {
 
         binding.letterChosen.text = "Letter chosen: ${args.letter}"
 
+        binding.nextButton.setOnClickListener {
+            next(it, args.rounds, args.letter)
+        }
+
         return binding.root
+    }
+
+    private fun next (view: View, rounds: Int, letter: String){
+        view.findNavController().navigate(LastNameFragmentDirections.actionLastNameFragmentToFoodFragment(rounds, letter))
     }
 
 }
