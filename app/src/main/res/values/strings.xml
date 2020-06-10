@@ -48,6 +48,12 @@
     <string name="food_editText">Food</string>
     <string name="food_next_button">Next</string>
 
+    <!-- Animals fragment -->
+    <string name="animals_title">Write an animal</string>
+    <string name="animals_logo_description">This is the animal logo.</string>
+    <string name="animals_editText">Animal</string>
+    <string name="animals_next_button">Next</string>
+
 
 
 </resources>
