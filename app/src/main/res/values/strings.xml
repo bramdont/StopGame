@@ -54,6 +54,17 @@
     <string name="animals_editText">Animal</string>
     <string name="animals_next_button">Next</string>
 
+    <!-- Country fragment -->
+    <string name="country_title">Write a country</string>
+    <string name="country_logo_description">This is the country logo.</string>
+    <string name="country_editText">Country</string>
+    <string name="country_next_button">Next</string>
+
+    <!-- Thing fragment -->
+    <string name="thing_title">Write a thing</string>
+    <string name="thing_logo_description">This is the thing logo.</string>
+    <string name="thing_editText">Thing</string>
+    <string name="stop_button">Stop</string>
 
 
 </resources>

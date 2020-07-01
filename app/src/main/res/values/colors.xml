@@ -8,6 +8,10 @@
     <color name="play_button_background">#FAFA16</color>
     <color name="play_button_text">#000000</color>
 
+    <!-- Stop button -->
+    <color name="stop_button_background">#FF0000</color>
+    <color name="stop_button_text">#FFFFFF</color>
+
     <!-- Drawer menu -->
     <color name="menu_items">#6D6D6D</color>
 

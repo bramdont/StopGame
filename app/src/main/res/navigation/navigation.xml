@@ -98,5 +98,35 @@
         <argument
             android:name="letter"
             app:argType="string" />
+        <action
+            android:id="@+id/action_animalsFragment_to_countryFragment"
+            app:destination="@id/countryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/countryFragment"
+        android:name="com.example.stopgame.CountryFragment"
+        android:label="@string/country_title"
+        tools:layout="@layout/fragment_country">
+        <argument
+            android:name="rounds"
+            app:argType="integer" />
+        <argument
+            android:name="letter"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_countryFragment_to_thingFragment"
+            app:destination="@id/thingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thingFragment"
+        android:name="com.example.stopgame.ThingFragment"
+        android:label="@string/thing_title"
+        tools:layout="@layout/fragment_thing">
+        <argument
+            android:name="rounds"
+            app:argType="integer" />
+        <argument
+            android:name="letter"
+            app:argType="string" />
     </fragment>
 </navigation>
